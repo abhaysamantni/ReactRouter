@@ -13,6 +13,7 @@ import { useParams } from 'react-router-dom';
 import Layout from "./components/React-Router-Hooks/Layout";
 import About from "./components/React-Router/About";
 import Home from "./components/React-Router/Home";
+import Users from "./components/React-Router/Users";
 
 
 // React-Router 
@@ -28,6 +29,9 @@ function App() {
           <li>
             <Link to="/about">Project Mgmt</Link>
           </li>
+          <li>
+            <Link to="/users">Users</Link>
+          </li>
         </ul>
       </nav>
 
@@ -35,6 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={ <About/>}></Route>
+          <Route path="/users" element={ <Users/>}></Route>
         </Routes>
       </Router>
     </div>

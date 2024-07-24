@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 
 //todo add one of the components from react folder
 const About = () => {
